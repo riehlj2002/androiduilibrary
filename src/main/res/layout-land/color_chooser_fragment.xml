@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androiduilibrary="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="false" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <com.sailbravado.androiduilibrary.SquareImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@id/gradientImageView"
+            androiduilibrary:dependentDimension="horizontal"
+            android:contentDescription="@string/color_chooser_gradient_content_description"
+            android:focusable="false" />
+
+        <com.sailbravado.androiduilibrary.VerticalSeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@id/hueSeekBar"
+            android:max="360"
+            android:indeterminate="false"
+            android:contentDescription="@string/color_chooser_spectrum_content_description"
+            android:focusable="false"
+            android:layout_marginLeft="8dp" />
+
+        <com.sailbravado.androiduilibrary.VerticalSeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@id/opacitySeekBar"
+            android:max="255"
+            android:indeterminate="false"
+            android:contentDescription="@string/color_chooser_opacity_content_description"
+            android:focusable="false"
+            android:layout_marginLeft="8dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp">
+
+            <TableLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color_chooser_alpha_label"
+                        android:focusable="false"
+                        android:id="@id/alphaLabelTextView" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@id/alphaEditText"
+                        android:contentDescription="@string/color_chooser_alpha_content_description"
+                        android:selectAllOnFocus="true" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color_chooser_red_label"
+                        android:focusable="false"
+                        android:id="@id/redLabelTextView" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@id/redEditText"
+                        android:contentDescription="@string/color_chooser_red_content_description"
+                        android:selectAllOnFocus="true" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color_chooser_green_label"
+                        android:focusable="false"
+                        android:id="@id/greenLabelTextView" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@id/greenEditText"
+                        android:contentDescription="@string/color_chooser_green_content_description"
+                        android:selectAllOnFocus="true" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color_chooser_blue_label"
+                        android:focusable="false"
+                        android:id="@id/blueLabelTextView" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@id/blueEditText"
+                        android:contentDescription="@string/color_chooser_blue_content_description"
+                        android:selectAllOnFocus="true" />
+
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@id/resultImageView"
+                android:contentDescription="@string/color_chooser_result_content_description"
+                android:focusable="false"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>

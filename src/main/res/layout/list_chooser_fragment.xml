@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sailbravado.androiduilibrary.ListChooserFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moveSourceEntryUpImageButton"
+            android:contentDescription="@string/list_chooser_move_entry_up_content_description" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moveSourceEntryDownImageButton"
+            android:contentDescription="@string/list_chooser_move_entry_down_content_description" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sourceListLabelTextView"
+        android:layout_weight="0"
+        android:textSize="22sp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/sourceListView"
+        android:choiceMode="multipleChoice"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="0">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addEntryImageButton"
+            android:contentDescription="@string/list_chooser_add_entry_content_description" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removeEntryImageButton"
+            android:contentDescription="@string/list_chooser_remove_entry_content_description" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addAllEntriesImageButton"
+            android:contentDescription="@string/list_chooser_add_all_entries_content_description" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removeAllEntriesImageButton"
+            android:contentDescription="@string/list_chooser_remove_all_entries_content_description" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/destinationListLabelTextView"
+        android:layout_weight="0"
+        android:textSize="22sp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/destinationListView"
+        android:choiceMode="multipleChoice"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="0">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moveDestinationEntryUpImageButton"
+            android:contentDescription="@string/list_chooser_move_entry_up_content_description" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/moveDestinationEntryDownImageButton"
+            android:contentDescription="@string/list_chooser_move_entry_down_content_description" />
+    </LinearLayout>
+</LinearLayout>

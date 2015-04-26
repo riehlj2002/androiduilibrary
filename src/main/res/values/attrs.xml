@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberPickerPreference" >
+        <attr name="minValue" format="integer" />
+        <attr name="maxValue" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ListChooserPreference" >
+        <attr name="sourceListLabel" format="string" />
+        <attr name="defaultSourceEntries" format="reference" />
+        <attr name="sourceListIsSortable" format="boolean" />
+        <attr name="autoSortSourceList" format="boolean" />
+        <attr name="destinationListLabel" format="string" />
+        <attr name="defaultDestinationEntries" format="reference" />
+        <attr name="destinationListIsSortable" format="boolean" />
+        <attr name="autoSortDestinationList" format="boolean" />
+        <attr name="delimiter" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SquareImageView" >
+        <attr name="dependentDimension" format="enum">
+            <!-- important: don't change these without changing the corresponding values in the
+            DependentDimension enum -->
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+            <enum name="neither" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="list_chooser_add_entry_content_description">Add the selected entry or entries to the destination list</string>
+    <string name="list_chooser_remove_entry_content_description">Remove the selected entry or entries from the destination list</string>
+    <string name="list_chooser_add_all_entries_content_description">Add all entries to the destination list</string>
+    <string name="list_chooser_remove_all_entries_content_description">Remove all entries from the destination list</string>
+    <string name="list_chooser_move_entry_up_content_description">Move the selected entry or entries up one position in the list</string>
+    <string name="list_chooser_move_entry_down_content_description">Move the selected entry or entries down one position in the list</string>
+    <string name="color_chooser_gradient_content_description">Touch or drag to select a shade of this color</string>
+    <string name="color_chooser_result_content_description">Displays the selected color</string>
+    <string name="color_chooser_spectrum_content_description">Slide the control to choose a color along the spectrum</string>
+    <string name="color_chooser_opacity_content_description">Slide the control to choose the opacity of the color</string>
+    <string name="color_chooser_alpha_label">Alpha:</string>
+    <string name="color_chooser_alpha_content_description">Set the opacity of the color (0 = transparent, 255 = opaque)</string>
+    <string name="color_chooser_red_label">Red:</string>
+    <string name="color_chooser_red_content_description">Set the red component of the color</string>
+    <string name="color_chooser_green_label">Green:</string>
+    <string name="color_chooser_green_content_description">Set the green component of the color</string>
+    <string name="color_chooser_blue_label">Blue:</string>
+    <string name="color_chooser_blue_content_description">Set the blue component of the color</string>
+
+</resources>
